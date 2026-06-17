@@ -18,14 +18,13 @@ tasks.withType<JavaCompile> {
 
     dependencies {
 
-            testImplementation("org.testng:testng:7.1.0")
+        testImplementation("junit:junit:4.13")
+    }
 
-
-        tasks.test {
-            useTestNG()
-        }
+    tasks.test {
+        useJUnit()
+    }
 
     }
 
 
-}
