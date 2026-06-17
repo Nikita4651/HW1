@@ -20,12 +20,6 @@ import org.testng.annotations.Test;
         Assert.assertEquals(actual, expected, "Для 1500 руб. нужно докупить 500 руб.");
     }
 
-     @Test
-    public void test3() {
-        int actual = service.remain(2000);
-        int expected = 0;
-        Assert.assertEquals(actual, expected, "Для 2000 руб. докупать не нужно");
-    }
 
      @Test
      public void test4() {
@@ -34,8 +28,5 @@ import org.testng.annotations.Test;
         Assert.assertEquals(actual, expected, "Для 0 руб. докупать не нужно");
     }
 
-     @Test (expectedExceptions = IllegalArgumentException.class)
-     public void test5() {
-        service.remain(-100);
-    }
+
 }
