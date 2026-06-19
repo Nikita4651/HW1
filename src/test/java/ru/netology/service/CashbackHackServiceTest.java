@@ -23,10 +23,10 @@ import org.testng.annotations.Test;
 
      @Test
      public void test4() {
-        int actual = service.remain(0);
-        int expected = 0;
-        Assert.assertEquals(actual, expected, "Для 0 руб. докупать не нужно");
-    }
+         int actual = service.remain(1000);
+         int expected = 0;
+         Assert.assertEquals(actual, expected, "Для 1000 руб. докупать не нужно");
+     }
 
 
 }
